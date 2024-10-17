@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Banking Dashboard</h1>
+        </header>
+        <main>
+            <!-- Balance Section -->
+            <section class="balance-section">
+                <h2>Current Balance: $<span id="balance">1000</span></h2>
+            </section>
+
+            <!-- Deposit Section -->
+            <section class="transaction-section">
+                <h3>Deposit Money</h3>
+                <input type="number" id="deposit-amount" placeholder="Enter amount to deposit">
+                <button id="deposit-btn">Deposit</button>
+            </section>
+
+            <!-- Withdraw Section -->
+            <section class="transaction-section">
+                <h3>Withdraw Money</h3>
+                <input type="number" id="withdraw-amount" placeholder="Enter amount to withdraw">
+                <button id="withdraw-btn">Withdraw</button>
+            </section>
+        </main>
+        <footer>
+            <p>Contact us at: support@bank.com | Follow us on social media!</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

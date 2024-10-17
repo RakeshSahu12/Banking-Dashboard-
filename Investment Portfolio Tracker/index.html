@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Portfolio Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Investment Portfolio Tracker</h1>
+        <h2>Total Portfolio Value: $<span id="total-value">0</span></h2>
+
+        <div class="add-investment">
+            <h3>Add New Investment</h3>
+            <label for="asset-name">Asset Name:</label>
+            <input type="text" id="asset-name" placeholder="Enter asset name">
+            <label for="invested-amount">Amount Invested:</label>
+            <input type="number" id="invested-amount" placeholder="Enter amount invested">
+            <label for="current-value">Current Value:</label>
+            <input type="number" id="current-value" placeholder="Enter current value">
+            <button id="add-investment-btn">Add Investment</button>
+        </div>
+
+        <h3>Investment List:</h3>
+        <table id="investment-list">
+            <thead>
+                <tr>
+                    <th>Asset Name</th>
+                    <th>Invested</th>
+                    <th>Current</th>
+                    <th>% Change</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <canvas id="portfolio-chart" width="10" height="10"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
